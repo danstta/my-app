@@ -103,8 +103,7 @@ export default function PuzzlePage() {
                 className="button"
                 onClick={() => router.push("/completed")}
               >
-                Go to finale →
-              </button>
+                Idi na kraj              </button>
             )}
           </div>
         </>

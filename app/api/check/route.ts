@@ -33,27 +33,27 @@ function norm(input: string) {
  * Answers are normalized with norm(). Customize these to your real clues!
  */
 const ANSWERS: Record<string, string[]> = {
-  "1": ["earth"], // Kutija
+  "1": ["knife"], // Kutija
   "2": ["erste"], // Maskica za telefon
   "3": ["ringispil"], // Naša pesma + sveće u obliku srca
   "4": ["osmeh"], // Zelena činija za ukras + staviti jednu sveću unutra!
-  "5": ["gljiva"],
-  "6": ["28"],
-  "7": ["sunce"],
-  "8": ["prag"],
-  "9": ["kava"],
-  "10": ["blago"],
-  "11": ["fenomenalno"],
-  "12": ["nokte"],
-  "13": ["312"], // 312 = 52 * 6
-  "14": ["daaaaaaaaaaaaaaaaaaa"],
-  "15": ["hari"],
-  "16": ["nemanjina", "knezmihailova", "terazije"], // pick your real street
-  "17": ["dj", "ad", "da"], // set your actual initials together
-  "18": ["mint"], // choose the correct one
-  "19": ["savadunav", "dunavsava"],
-  "20": ["42"], // replace with DD+MM
-  "21": ["ljubav"],
+  "5": ["gljiva"], // male gljive
+  "6": ["28"], // 2 paprike 
+  "7": ["sunce"], // naočare za sunce
+  "8": ["prag"], // pez bombone
+  "9": ["kava"], // šolja za kavu
+  "10": ["kinezi"], // ništa
+  "11": ["fenomenalno"], // čokolada
+  "12": ["nokti"], // lak za nokte
+  "13": ["208"], // 208 = 52 * 4
+  "14": ["daaaaaaaaaaaaaaaaaaa"], // Maske za lice
+  "15": ["hari"], // Slatkišii
+  "16": ["vukovar"], // Kupon za masažu
+  "17": ["da"], // poljubac
+  "18": ["mint"], // igračkica
+  "19":  ["kliknime"], // tašnica
+  "20": ["milica"], // parfem
+  "21": ["volimte"], // čestitka
 };
 
 export async function POST(req: NextRequest) {

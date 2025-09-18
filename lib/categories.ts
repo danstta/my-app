@@ -28,8 +28,8 @@ export const categories: Category[] = [
   },
   {
     slug: "practical",
-    name: "Praktično",
-    intro: "Useful little things for every day. Small upgrades, big vibes.",
+    name: "Vojim teeeeeeeee",
+    intro: "Sretan ti rođendanko, voli te tvoj bubiić!",
     color: "#10b981",
     startId: 8,
     endId: 9,
@@ -70,17 +70,17 @@ export const categories: Category[] = [
   },
   {
     slug: "experience",
-    name: "Experience",
-    intro: "Moments > things. Let’s plan the next little adventures.",
+    name: "Moj srckić bubićkić",
+    intro: "Hvala ti štoo posotjiiiš!",
     color: "#84cc16",
     startId: 17,
     endId: 18,
   },
   {
     slug: "personal",
-    name: "Personal",
+    name: "A sad pravi pokloni!",
     intro:
-      "The heart of it all. Our memories, our story, our promises. ❤️",
+      "❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️",
     color: "#fb7185",
     startId: 19,
     endId: 21,
