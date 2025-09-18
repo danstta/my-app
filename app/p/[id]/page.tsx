@@ -42,7 +42,7 @@ export default function PuzzlePage() {
   }
 
   function onSolved() {
-    markSolved(puzzle.id);
+    markSolved(puzzle!.id);
     setUnlocked(true);
     if (typeof window !== "undefined") {
       window.dispatchEvent(new StorageEvent("storage"));

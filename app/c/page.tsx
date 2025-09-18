@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { categoryBySlug } from "../../../lib/categories";
+import { categoryBySlug } from "../../lib/categories";
 
 export default function CategoryIntro(props: {
   params: { slug: string };

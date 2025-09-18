@@ -58,7 +58,8 @@ const ANSWERS: Record<string, string[]> = {
 
 export async function POST(req: NextRequest) {
   // Require session
-  const token = cookies().get("portal_auth")?.value || null;
+  const coks = await cookies();
+  const token = coks.get("portal_auth")?.value || null;
   if (!verifySession(token)) {
     return NextResponse.json(
       { ok: false, reason: "Not authorized." },

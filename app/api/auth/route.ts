@@ -38,7 +38,8 @@ export async function POST(req: NextRequest) {
     iat: Date.now(),
   });
 
-  cookies().set("portal_auth", token, {
+  const coks = await cookies();
+  coks.set("portal_auth", token, {
     httpOnly: true,
     path: "/",
     sameSite: "lax",
@@ -50,12 +51,14 @@ export async function POST(req: NextRequest) {
 }
 
 export async function GET() {
-  const c = cookies().get("portal_auth")?.value || null;
+  const coks = await cookies();
+  const c = coks.get("portal_auth")?.value || null;
   const sess = verifySession(c);
   return NextResponse.json({ ok: !!sess, session: sess || null });
 }
 
 export async function DELETE() {
-  cookies().delete("portal_auth");
+  const coks = await cookies();
+  coks.delete("portal_auth");
   return NextResponse.json({ ok: true });
 }

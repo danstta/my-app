@@ -2,10 +2,11 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { verifySession } from "../../lib/auth";
 
-export default function CategoryLayout(props: {
+export default async function CategoryLayout(props: {
   children: React.ReactNode;
 }) {
-  const token = cookies().get("portal_auth")?.value || null;
+  const coks = await cookies();
+  const token = coks.get("portal_auth")?.value || null;
   const sess = verifySession(token);
   if (!sess) redirect("/");
   return <>{props.children}</>;
